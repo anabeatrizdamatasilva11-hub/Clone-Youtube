@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clone da interface do YouTube para fins educacionais">
+    <title>YouTube - Clone</title>
+    <link rel="stylesheet" href="tube.css">
+    <link rel="shortcut icon" href="./images/orange-youtube-icon-png-7.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27a76fa80e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" aria-label="Página inicial do YouTube">
+            <img src="./images/icon-youtube.png" alt="Logo do YouTube" class="youtube-logo">
+        </a>
+
+        <form class="search-bar" role="search">
+            <input class="search-input" type="search" placeholder="Pesquisar" aria-label="Pesquisar vídeos">
+            <button type="submit" class="search-btn" aria-label="Buscar">
+                <img src="./images/search.svg" alt="">
+            </button>
+        </form>
+
+        <div class="menu-icons">
+            <a href="#" aria-label="Enviar vídeo">
+                <img src="./images/video.svg" alt="Ícone de upload de vídeo">
+            </a>
+            <a href="#" aria-label="Apps do YouTube">
+                <img src="./images/app.svg" alt="Ícone de aplicativos">
+            </a>
+            <a href="#" aria-label="Notificações">
+                <img src="./images/bell.svg" alt="Ícone de notificações">
+            </a>
+            <a href="#" aria-label="Seu canal">
+                <img class="menu-channel-icon" src="./images/perfil.jpg" alt="Foto do seu perfil">
+            </a>
+        </div>
+    </header>
+
+    <nav class="categories" aria-label="Categorias de vídeos">
+        <section class="category-section">
+            <button class="category category-active" aria-pressed="true">Tudo</button>
+            <button class="category" aria-pressed="false">Música</button>
+            <button class="category" aria-pressed="false">Jogos</button>
+            <button class="category" aria-pressed="false">Anime</button>
+            <button class="category" aria-pressed="false">Programação</button>
+            <button class="category" aria-pressed="false">Filmes</button>
+            <button class="category" aria-pressed="false">Genshin Impact</button>
+            <button class="category" aria-pressed="false">Ao vivo</button>
+            <button class="category" aria-pressed="false">Hypados</button>
+            <button class="category" aria-pressed="false">Álbuns</button>
+            <button class="category" aria-pressed="false">Mixes</button>
+        </section>
+    </nav>
+
+    <main class="videos">
+        <section class="video-section">
+            <!-- Sim sou Silva -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="10:28">
+                    <img class="thumbnail-image" src="./images/thum.1.jpg" alt="Miniatura: Anya vendo seus meme ft.@BatataComPepino">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Canal Sim sou Silva">
+                        <img class="channel-icon" src="./images/icon.1.jpg" alt="Ícone do canal Sim sou Silva">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">Anya vendo seus meme ft.@BatataComPepino</a>
+                        <a href="#" class="name">Sim sou Silva</a>
+
+                        <div class="video-metadata">
+                            <span>1,3 mi de visualizações</span>
+                            •  
+                            <span>há 3 anos</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tinocando -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="19:19">
+                    <img class="thumbnail-image" src="./images/thum.2.jpg" alt="Miniatura de vídeo do canal Tinocando">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Canal Tinocando">
+                        <img class="channel-icon" src="./images/icon.2.jpg" alt="Ícone do canal Tinocando">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">VAN GOGH: o HOMEM que DECIFROU o AMARELO</a>
+                        <a href="#" class="name">Tinocando</a>
+
+                        <div class="video-metadata">
+                            <span>398 mil visualizações</span>
+                            •  
+                            <span>há 4 meses</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Genshin -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="5:35">
+                    <img class="thumbnail-image" src="./images/thumb.3.jpg" alt="Miniatura de vídeo sobre Genshin Impact">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Canal de Genshin Impact">
+                        <img class="channel-icon" src="./images/icon.3.jpg" alt="Ícone do canal de Genshin">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">"Epopeia da Lua Nova" - Teaser da Canção da Lua Nova</a>
+                        <a href="#" class="name">Genshin Impact BR</a>
+
+                        <div class="video-metadata">
+                            <span>2,1 mi de visualizações</span>
+                            •  
+                            <span>há 1 mês</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- MrCasual -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="11:50">
+                    <img class="thumbnail-image" src="./images/thum.4.jpg" alt="Miniatura de vídeo do MrCasual">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Canal MrCasual">
+                        <img class="channel-icon" src="./images/icon.4.jpg" alt="Ícone do canal MrCasual">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">A 6.1 É Surpriendente... Mas o Motivo NÃO É o que Você Pensa! | Genshin Impact</a>
+                        <a href="#" class="name">MrCasual</a>
+
+                        <div class="video-metadata">
+                            <span>20 mil visualizações</span>
+                            •  
+                            <span>há 4 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Chopin -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="4:30">
+                    <img class="thumbnail-image" src="./images/thum.5.jpg" alt="Miniatura: Música clássica de Chopin">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Canal de música clássica">
+                        <img class="channel-icon" src="./images/icon.5.jpg" alt="Ícone do canal de Chopin">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">Chopin-Noctune op.9 No.2</a>
+                        <a href="#" class="name">andrea romano</a>
+
+                        <div class="video-metadata">
+                            <span>259 mi de visualizações</span>
+                            •  
+                            <span>há 12 anos</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Olkabone -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="34:52">
+                    <img class="thumbnail-image" src="./images/thumb.6.jpg" alt="Miniatura de vídeo do Olkabone">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Canal Olkabone">
+                        <img class="channel-icon" src="./images/icon.6.jpg" alt="Ícone do canal Olkabone">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">Body Splash da Virginia| REACT Felca</a>
+                        <a href="#" class="name">Olkabone</a>
+
+                        <div class="video-metadata">
+                            <span>522 mil de visualizações</span>
+                            •  
+                            <span>há 1 ano</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Vídeo 7 -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="2:01:37">
+                    <img class="thumbnail-image" src="./images/thum.7.jpg" alt="Miniatura de vídeo">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Visitar canal">
+                        <img class="channel-icon" src="./images/icon.7.jpg" alt="Ícone do canal">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">🍹지치고 힘들 땐 음료 ASMR로 힐링해요/주중의 여유로움/2시간 모음🤎2 Hours Vlog/Cafe Vlog/ASMR/Tasty Coffee#459</a>
+                        <a href="#" class="name">Taste Coffee</a>
+
+                        <div class="video-metadata">
+                            <span>4,9 mi visualizações</span>
+                            •  
+                            <span>há 1 ano</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Vídeo 8 -->
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="8:26">
+                    <img class="thumbnail-image" src="./images/thumb.8.jpg" alt="Miniatura de vídeo">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Visitar canal">
+                        <img class="channel-icon" src="./images/icon.8.jpg" alt="Ícone do canal">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">Montagem de bolo de chocolate caseiro</a>
+                        <a href="#" class="name">Joo's Little Table</a>
+
+                        <div class="video-metadata">
+                            <span>187 mil visualizações</span>
+                            •  
+                            <span>há 2 anos</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="video-container">
+                <a href="#" class="thumbnail" data-duration="3:19">
+                    <img class="thumbnail-image" src="./images/thum.9.jpg" alt="Miniatura de vídeo">
+                </a>
+
+                <div class="video-bottom-section">
+                    <a href="#" aria-label="Visitar canal">
+                        <img class="channel-icon" src="./images/icon.9.jpg" alt="Ícone do canal">
+                    </a>
+
+                    <div class="video-details">
+                        <a href="#" class="title">Golden - Huntrix|KPOP DEMON HUNTERS</a>
+                        <a href="#" class="name">Netflix</a>
+
+                        <div class="video-metadata">
+                            <span>530 mi visualizações</span>
+                            •  
+                            <span>há 3 meses</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
